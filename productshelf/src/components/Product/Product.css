@@ -8,6 +8,7 @@
 
 .productContainer {
   padding: 32px;
+  margin-bottom: 12px;
   display: inline-flex;
   flex-direction: column;
   border-radius: 8px;
