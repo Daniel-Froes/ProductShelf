@@ -1,0 +1,42 @@
+:root {
+  --green-400: #40b25c;
+  --green-600: #1c6c3e;
+  --grayscale-0: #fff;
+  --green-100: #a3f9b9;
+  --grayscale-900: #1c1c1c;
+}
+
+.addCartButton {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: var(--green-400);
+  border-radius: 5px;
+  color: var(--grayscale-0, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  transition: background-color 100ms ease-out 100ms;
+}
+.addCartButton:hover:not(.addCartButton--active) {
+  background: var(--green-600);
+}
+.addCartButton--active {
+  background: var(--green-100);
+  color: var(--grayscale-900);
+}
+.addCartButton--active::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><path d="M20.5 6L9.5 17L4.5 12" stroke="%231C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
